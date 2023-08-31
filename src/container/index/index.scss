@@ -53,7 +53,8 @@ main {
     background-color: rgb(173, 173, 173);
     color: #000;
 
-    &:hover {
+    &:hover,
+    &:active {
       background-color: rgb(223, 223, 223);
     }
   }
@@ -63,8 +64,7 @@ main {
 
     &:hover,
     &:active {
-      background-color: #fff;
-      color: orange;
+      background-color: rgb(255, 211, 130);
     }
 
     &:focus {
@@ -76,7 +76,8 @@ main {
   & > .button-equal {
     background-color: orange;
 
-    &:hover {
+    &:hover,
+    &:active {
       background-color: rgb(255, 211, 130);
     }
   }

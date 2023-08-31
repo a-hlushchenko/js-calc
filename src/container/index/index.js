@@ -23,11 +23,7 @@ class Calc {
     this.#value = this.#value.concat(newValue)
     this.#displayValue = this.#displayValue.concat(newValue)
 
-    if (this.#isOp) {
-      this.#display()
-    } else {
-      this.#output()
-    }
+    this.#display()
 
     this.#isResult = false
     this.#isOp = false
