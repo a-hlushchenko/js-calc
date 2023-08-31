@@ -2,8 +2,8 @@ const express = require('express')
 const router = express.Router()
 
 router.get('/', function (req, res) {
-  res.render('calc', {
-    name: 'calc',
+  res.render('index', {
+    name: 'index',
     component: [],
     title: 'Калькулятор',
     

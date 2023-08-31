@@ -1,13 +1,24 @@
-{{!
-Це код container файлу для index сторінки,
-в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
-}}
-
 <main>
-	{{>heading title="Index" info=data.test}}
+	<div class="calculator">
+		<div class="display" id="output">0</div>
+		<div class="buttons">
+			<button onclick="calc.reset()" class="button-tech button-main">AC</button>
+			<button onclick="calc.op('/')" class="button-calc">/</button>
+			<button onclick="calc.add(7)">7</button>
+			<button onclick="calc.add(8)">8</button>
+			<button onclick="calc.add(9)">9</button>
+			<button onclick="calc.op('*')" class="button-calc">*</button>
+			<button onclick="calc.add(4)">4</button>
+			<button onclick="calc.add(5)">5</button>
+			<button onclick="calc.add(6)">6</button>
+			<button onclick="calc.op('-')" class="button-calc">-</button>
+			<button onclick="calc.add(1)">1</button>
+			<button onclick="calc.add(2)">2</button>
+			<button onclick="calc.add(3)">3</button>
+			<button onclick="calc.op('+')" class="button-calc">+</button>
+			<button onclick="calc.add(0)" class="button-big">0</button>
+			<button onclick="calc.dot()">,</button>
+			<button onclick="calc.result()" class="button-equal">=</button>
+		</div>
+	</div>
 </main>
-
-{{!
-    Цей код містить лише те, що буде виводитись в <body>
-    Адже наш layout/default.hbs має вже структуру HTML
-}}
