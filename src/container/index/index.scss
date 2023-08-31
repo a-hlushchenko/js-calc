@@ -20,9 +20,9 @@ main {
   text-align: right;
   padding: 12px;
   align-self: flex-end;
-  overflow-x: hidden;
+  overflow-x: scroll;
   justify-self: end;
-  max-width: 100%;
+  max-width: 330px;
 }
 
 .buttons {
