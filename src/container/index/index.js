@@ -107,6 +107,16 @@ class Calc {
   }
 }
 
+const output = document.getElementById('output')
+
+setInterval(() => {
+  if (window.getComputedStyle(output).width === '320px') {
+    output.style.setProperty('overflow-x', 'scroll')
+  } else {
+    output.style.setProperty('overflow-x', 'hidden')
+  }
+}, 100)
+
 Calc.init()
 
 window.calc = Calc
